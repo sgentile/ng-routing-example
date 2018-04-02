@@ -8,7 +8,7 @@ import { SearchService } from '../../search.service';
   styleUrls: ['./artist.component.scss']
 })
 export class ArtistComponent {
-  private artist: any;
+  public artist: any;
 
   constructor(private route: ActivatedRoute,
               private searchService: SearchService) { 

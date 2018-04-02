@@ -8,7 +8,7 @@ import { SearchService } from '../../search.service';
   styleUrls: ['./artist-track-list.component.scss']
 })
 export class ArtistTrackListComponent {
-  private tracks: any[];
+  public tracks: any[];
 
   constructor(private route: ActivatedRoute, searchService: SearchService) {
     this.route.parent.params.subscribe(params => {

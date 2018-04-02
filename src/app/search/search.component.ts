@@ -9,9 +9,9 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
-  private loading: boolean = false;
+  public loading: boolean = false;
 
-  constructor(private itunes: SearchService,
+  constructor(public itunes: SearchService,
               private router: Router,
               private route: ActivatedRoute) { 
     this.route.params.subscribe(params => {

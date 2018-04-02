@@ -28,7 +28,6 @@ const routes: Routes = [
   },
   { path: '**', component: HomeComponent } //catch all route
 ]
-
-//loadChildren: './propertylevelagreement/propertylevelagreement.module#PropertyLevelAgreementModule'
-export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' });
+//export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' });
+export const AppRoutingModule = RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' });
 

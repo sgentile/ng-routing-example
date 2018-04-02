@@ -8,7 +8,7 @@ import { SearchService } from '../../search.service';
   styleUrls: ['./artist-album-list.component.scss']
 })
 export class ArtistAlbumListComponent {
-  private albums: any[];
+  public albums: any[];
 
   constructor(private route: ActivatedRoute, 
               private searchService: SearchService) { 
