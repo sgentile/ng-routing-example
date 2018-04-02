@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { SearchService } from '../search.service';
+import { SearchService } from '../../search.service';
 
 @Component({
   selector: 'app-artist-track-list',

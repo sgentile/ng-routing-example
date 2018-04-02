@@ -11,9 +11,6 @@ import { HomeComponent } from './home/home.component';
 
 import { SearchService } from './search.service';
 import { AppRoutingModule } from './app-routing.module';
-import { ArtistComponent } from './artist/artist.component';
-import { ArtistTrackListComponent } from './artist-track-list/artist-track-list.component';
-import { ArtistAlbumListComponent } from './artist-album-list/artist-album-list.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 @NgModule({
@@ -21,10 +18,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     AppComponent,
     SearchComponent,
     HeaderComponent,
-    HomeComponent,
-    ArtistComponent,
-    ArtistTrackListComponent,
-    ArtistAlbumListComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
