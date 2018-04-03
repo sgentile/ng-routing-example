@@ -9,7 +9,7 @@ import { SearchComponent } from './search/search.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 
-import { SearchService } from './search.service';
+import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -25,12 +25,10 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     ReactiveFormsModule,
     FormsModule,
     JsonpModule,
+    CoreModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [SearchService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-//platformBrowserDynamic().bootstrapModule(AppModule);
-

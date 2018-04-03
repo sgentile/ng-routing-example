@@ -9,7 +9,7 @@ import { ArtistTrackListComponent } from './tracks/artist-track-list.component';
 import { ArtistAlbumListComponent } from './albums/artist-album-list.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { SearchService } from '../search.service';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,9 @@ import { SearchService } from '../search.service';
   imports: [
     CommonModule,    
     JsonpModule,
+    CoreModule,
     ArtistRoutingModule
   ],
-  providers: [SearchService]
+  providers: []
 })
 export class ArtistModule { }

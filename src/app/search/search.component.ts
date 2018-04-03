@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { SearchService } from '../search.service';
+import { SearchService } from '../services/search.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
