@@ -59,9 +59,6 @@
   "defaults": {
     "styleExt": "scss",
     "component": {
-    }, 
-    "build": {
-      "showCircularDependencies": false
     }
   }
 }
